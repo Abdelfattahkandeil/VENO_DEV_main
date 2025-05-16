@@ -1,0 +1,51 @@
+VenoStore is a modern e-commerce platform that enables users to create, manage, and grow their online stores. It features a user-friendly interface, powerful product management, secure and flexible payment options, and a streamlined checkout process. The platform is trusted by thousands of businesses and offers customizable themes, analytics, and robust admin tools to help businesses succeed online.
+
+Key Features:
+- Product management
+- Fast and secure checkout
+- Multiple payment options
+- Customizable themes
+- Business analytics
+- Admin dashboard
+- Customer testimonials
+
+VenoStore is part of the Veno portfolio, designed for scalability and ease of use, with a consistent, modern UI across all pages.
+
+---
+
+وصف الصور المطلوبة لجميع مشاريع Veno Portfolio:
+
+1. شعار كل مشروع:
+   - صورة شعار مميزة لكل مشروع (يفضل أن تعبر عن فكرة المشروع وألوانه).
+
+2. صور رئيسية للصفحات:
+   - صورة غلاف أو صورة رئيسية لكل صفحة رئيسية في كل مشروع (مثال: صورة متجر، صورة مدونة، صورة تطبيق دردشة، صورة آلة حاسبة، صورة معرض صور، صورة إحصائيات، صورة سفر، إلخ).
+
+3. صور للميزات:
+   - أيقونات أو صور توضيحية للميزات الأساسية في كل مشروع (مثال: ميزة الدردشة، ميزة الحسابات، ميزة عرض الصور، ميزة التحليل، ميزة الحجز، إلخ).
+
+4. صور المستخدمين أو العملاء:
+   - صور رمزية أو صور واقعية لعرض شهادات أو تفاعل المستخدمين في المشاريع التي تدعم ذلك (مثل المتجر أو الدردشة).
+
+5. صور المنتجات أو البيانات:
+   - صور منتجات للمتجر، صور مقالات للمدونة، صور بيانات أو رسوم بيانية لمشروع الإحصائيات، صور أماكن أو وجهات لمشروع السفر.
+
+6. صور للثيمات أو التخصيص:
+   - صور معاينة للثيمات أو خيارات التخصيص في المشاريع التي تدعم ذلك (مثل المتجر أو المدونة).
+
+7. صور للوحة التحكم أو الإعدادات:
+   - صور أو لقطات شاشة توضح لوحة التحكم أو إعدادات كل مشروع.
+
+8. صور عامة أو زخرفية:
+   - صور خلفية أو عناصر زخرفية خفيفة لدعم التصميم العام لكل مشروع.
+
+خطوات البحث والتجهيز:
+1. أنشئ قائمة بالصور المطلوبة لكل مشروع حسب النقاط أعلاه.
+2. ابحث عن الصور في مواقع مجانية أو استخدم أدوات الذكاء الاصطناعي.
+3. تأكد من جودة الصور ووضوحها.
+4. احفظ الصور في مجلد images أو public داخل كل مشروع.
+5. استخدم أسماء ملفات واضحة بالإنجليزية.
+6. حدث مسارات الصور في الكود.
+7. راجع كل صفحة وتأكد من ظهور الصور بشكل صحيح ومتناسق.
+
+ملاحظة: يفضل استخدام SVG للأيقونات وJPG/PNG للصور الفوتوغرافية.

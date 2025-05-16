@@ -1,0 +1,7 @@
+This directory contains product images. Please add the following images:
+- iphone-14-pro.jpg
+- galaxy-s23-ultra.jpg
+- macbook-pro-16.jpg
+- sony-wh1000xm5.jpg
+- ipad-air.jpg
+- dell-xps-15.jpg 

@@ -1,0 +1,462 @@
+/* Base styles */
+.venochat-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #121212;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+
+.venochat-app {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Theme styles */
+.dark {
+  --bg-primary: #1e272e;
+  --bg-secondary: #2c2c54;
+  --bg-tertiary: #252c35;
+  --text-primary: #ffffff;
+  --text-secondary: #b2bec3;
+  --accent: #f19066;
+  --own-message: #2c2c54;
+  --other-message: #252c35;
+}
+
+.light {
+  --bg-primary: #f5f5f5;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #eeeeee;
+  --text-primary: #2d3436;
+  --text-secondary: #636e72;
+  --accent: #6c5ce7;
+  --own-message: #e4f2ff;
+  --other-message: #ffffff;
+}
+
+.midnight {
+  --bg-primary: #0f2027;
+  --bg-secondary: #203a43;
+  --bg-tertiary: #1a2c34;
+  --text-primary: #ffffff;
+  --text-secondary: #a0aec0;
+  --accent: #00b4db;
+  --own-message: #203a43;
+  --other-message: #1a2c34;
+}
+
+.sunset {
+  --bg-primary: #232526;
+  --bg-secondary: #414345;
+  --bg-tertiary: #333536;
+  --text-primary: #ffffff;
+  --text-secondary: #b2bec3;
+  --accent: #ff416c;
+  --own-message: #414345;
+  --other-message: #333536;
+}
+
+.forest {
+  --bg-primary: #1f1f1f;
+  --bg-secondary: #2d3436;
+  --bg-tertiary: #292929;
+  --text-primary: #ffffff;
+  --text-secondary: #b2bec3;
+  --accent: #6ab04c;
+  --own-message: #2d3436;
+  --other-message: #292929;
+}
+
+/* Header styles */
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 10;
+}
+
+.avatar-container {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.status-indicator {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #4cd137;
+  border: 2px solid var(--bg-secondary);
+}
+
+.header-icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+}
+
+.header-icon-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+}
+
+/* Message list styles */
+.message-list {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.date-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.date-divider span {
+  background-color: var(--bg-primary);
+  padding: 0 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.date-divider::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.message-container {
+  display: flex;
+  margin-bottom: 8px;
+  max-width: 80%;
+}
+
+.own-message {
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+.other-message {
+  margin-right: auto;
+  justify-content: flex-start;
+}
+
+.message-avatar {
+  margin-right: 8px;
+  align-self: flex-end;
+}
+
+.message-bubble {
+  padding: 8px 12px;
+  border-radius: 18px;
+  position: relative;
+  word-break: break-word;
+}
+
+.message-bubble.own {
+  background-color: var(--own-message);
+  color: var(--text-primary);
+  border-bottom-right-radius: 4px;
+}
+
+.message-bubble.other {
+  background-color: var(--other-message);
+  color: var(--text-primary);
+  border-bottom-left-radius: 4px;
+}
+
+.message-text {
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.message-meta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.message-time {
+  opacity: 0.8;
+}
+
+.message-status {
+  display: flex;
+  align-items: center;
+}
+
+/* Input area styles */
+.input-area {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: var(--bg-secondary);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  gap: 8px;
+}
+
+.input-container {
+  flex: 1;
+  background-color: var(--bg-tertiary);
+  border-radius: 24px;
+  padding: 8px 16px;
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+.message-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text-primary);
+  font-size: 14px;
+  resize: none;
+  max-height: 100px;
+}
+
+.message-input::placeholder {
+  color: var(--text-secondary);
+}
+
+.input-icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.input-icon-button:hover {
+  color: var(--text-primary);
+}
+
+.send-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  color: white;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.send-button:hover {
+  transform: scale(1.05);
+}
+
+/* Settings panel styles */
+.settings-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.settings-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-secondary);
+  z-index: 101;
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.settings-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.close-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+}
+
+.close-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+}
+
+.settings-content {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.settings-section {
+  margin-bottom: 24px;
+}
+
+.settings-section h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.settings-input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  background-color: var(--bg-tertiary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+  font-size: 14px;
+}
+
+.settings-input:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.settings-button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  background-color: var(--accent);
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.settings-button:hover {
+  opacity: 0.9;
+}
+
+/* Theme selector styles */
+.theme-selector {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.theme-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: var(--bg-tertiary);
+  border: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.theme-option.active {
+  border-color: var(--accent);
+}
+
+.theme-colors {
+  display: flex;
+  gap: 4px;
+}
+
+.theme-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.theme-name {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+  .venochat-app {
+    height: 100vh;
+    max-width: 100%;
+    border-radius: 0;
+  }
+
+  .message-container {
+    max-width: 90%;
+  }
+}
